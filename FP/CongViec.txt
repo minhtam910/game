@@ -1,0 +1,6 @@
+Công việc còn lại:
+	UI
+	Tính điểm
+	Tạo boom để diệt zombie
+	Âm thanh
+	

@@ -7,7 +7,7 @@ public class ZombieSpawn : MonoBehaviour {
     public GameObject maleZom;
     public GameObject femaleZom;
     private Vector2 screenBounds;
-    private float spawnTime = 3.0f;
+    private float spawnTime = 3.8f;
     private float n;
     // Use this for initialization
     void Start () {
