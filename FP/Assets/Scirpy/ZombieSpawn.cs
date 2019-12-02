@@ -45,7 +45,7 @@ public class ZombieSpawn : MonoBehaviour {
         {
             comeFaster();
             tempScore = score;
-            cooldownItem -= 2.5f;
+            cooldownItem = Mathf.Max(1f, cooldownItem - 2.5f);
         }
     }
 
@@ -111,7 +111,7 @@ public class ZombieSpawn : MonoBehaviour {
 
     void comeFaster()
     {
-        spawnTime = Mathf.Max(0.3f, spawnTime - 0.8f);
+        spawnTime = Mathf.Max(0.8f, spawnTime - 0.8f);
         Debug.Log("Spawn time: " + spawnTime);
         StopCoroutine(coroutine);
         coroutine = StartCoroutine(zombieWave());

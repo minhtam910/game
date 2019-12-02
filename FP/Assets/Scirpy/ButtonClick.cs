@@ -22,13 +22,12 @@ public class ButtonClick : MonoBehaviour {
 
     public void onBtnExit()
     {
-        
+        Debug.Log("Has quit");
         Application.Quit();
     }
 
     public void onBtnReset()
     {
-        PlayerPrefs.DeleteAll();
-        Debug.Log("Has quit");
+        PlayerPrefs.DeleteAll(); 
     }
 }

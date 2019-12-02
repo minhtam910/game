@@ -40,48 +40,7 @@ public class GameController : MonoBehaviour {
     void Update ()
     {
         Player1Controller(); 
-        //Player2Controller();
     }
-
-    /*void Player2Controller()
-    {
-        float n = Random.Range(0, 5);
-        if (Input.GetKey("o") && cooldown1 == false)
-        {
-            if (n >= 3)
-            {
-                GameObject a = Instantiate(chicken) as GameObject;
-                a.transform.position = new Vector2(Random.Range(-7,(float)2.45), (float)-3.35);
-                Invoke("resetCooldown1", cooldownItem);
-                cooldown1 = true;
-            }
-            else
-            {
-                GameObject a = Instantiate(bacon) as GameObject;
-                a.transform.position = new Vector2(Random.Range(-7, (float)2.45), (float)-3.35);
-                Invoke("resetCooldown1", cooldownItem);
-                cooldown1 = true;
-            }
-        }
-
-        if (Input.GetKey("p") && cooldown2 == false)
-        {
-            if (n >= 3)
-            {
-                GameObject a = Instantiate(beer) as GameObject;
-                a.transform.position = new Vector2(Random.Range(-7, (float)2.45), (float)-3.35);
-                Invoke("resetCooldown2", cooldownItem);
-                cooldown2 = true;
-            }
-            else
-            {
-                GameObject a = Instantiate(whiskey) as GameObject;
-                a.transform.position = new Vector2(Random.Range(-7, (float)2.45), (float)-3.35);
-                Invoke("resetCooldown2", cooldownItem);
-                cooldown2 = true;
-            }
-        }
-    }*/
 
     void Player1Controller()
     {

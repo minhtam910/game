@@ -5,9 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TowerState : MonoBehaviour {
-    private Highscore highscore;
-    private GameObject canvas;
-    private static int score = 0;
+    private static int score;
     public static int max = 5;
     public Text scoreText;
     public Text hpText;
@@ -37,9 +35,7 @@ public class TowerState : MonoBehaviour {
     }
 	// Use this for initialization
 	void Start () {
-        canvas = GameObject.Find("CanvasScore");
-        highscore = canvas.GetComponent<Highscore>();
-        
+        score = 0;
 	}
 	
 	// Update is called once per frame
@@ -58,8 +54,11 @@ public class TowerState : MonoBehaviour {
 
             if (HP == 0)
             {
-                highscore.addHighscoreEntry(score, System.DateTime.Now.ToString());
-                SceneManager.LoadScene("Highscore");
+                GameObject scoreHolder = GameObject.Find("ScoreHolder");
+                Score scoreHolderScript = scoreHolder.GetComponent<Score>();
+                scoreHolderScript.setScore(score);
+                scoreHolderScript.setDone(true);
+                SceneManager.LoadScene("Highscore");        
             }     
         }
 	}

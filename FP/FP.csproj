@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scirpy\TowerState.cs" />
     <Compile Include="Assets\Scirpy\ZomWalk.cs" />
     <Compile Include="Assets\Scirpy\ZombieSpawn.cs" />
+    <Compile Include="Assets\Score.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
